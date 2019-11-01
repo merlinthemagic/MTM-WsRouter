@@ -5,7 +5,7 @@ namespace MTM\WsRouter\Models\Messages\Requests;
 class Egress extends \MTM\WsRouter\Models\Messages\Base
 {
 	protected $_type="egress-request";
-	protected $_timeout=25000; //0 means dont wait for a response
+	protected $_timeout=60000; //0 means dont wait for a response
 	protected $_txTime=null;
 	protected $_penPeers=array();
 	protected $_rxDatas=array();
